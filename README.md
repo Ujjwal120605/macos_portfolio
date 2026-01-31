@@ -1,63 +1,72 @@
-# playground-macos
+# 🖥️ Ujjwal Bajpai's Portfolio (macOS Style)
 
-My portfolio website simulating macOS's GUI: https://portfolio.zxh.me
+![Portfolio Preview](public/img/ui/wallpaper-ujjwal-v2.jpg)
 
-Powered by [React](https://reactjs.org/) + [Zustand](https://zustand-demo.pmnd.rs/) + [UnoCSS](https://uno.antfu.me/) + [TypeScript](https://www.typescriptlang.org/) + [Vite](https://vitejs.dev/).
+> A fully functional, interactive macOS simulation running in your browser, designed to showcase my skills, projects, and professional journey.
 
-![light mode](./public/screenshots/light.png)
-![dark mode](./public/screenshots/dark.png)
+## 👋 About Me
 
+I am **Ujjwal Bajpai**, an Electronics & Communication Engineering student at **RV College of Engineering**, passionate about **Full-Stack Development** and **AI-driven solutions**. 
 
-&nbsp;
+This portfolio is a creative representation of my work, featuring a functional Terminal, Dock, Launchpad, and window management system—all built with web technologies.
 
-## Usage
+*   **Location:** Bangalore, India
+*   **Email:** [bajpaiujjwal3@gmail.com](mailto:bajpaiujjwal3@gmail.com)
+*   **LinkedIn:** [Ujjwal Bajpai](https://www.linkedin.com/in/ujjwal-bajpai-9aa242289/)
+*   **LeetCode:** [Top 10% (425+ Solved)](https://leetcode.com/u/ujjwalbajpai/)
 
-Clone the repo and install dependencies:
+## 🚀 Featured Projects
 
-```bash
-pnpm install
-```
+Explore these apps within the portfolio (via Launchpad or Finder):
 
-Start dev server (with hot reloading):
+*   **📹 Yoom**: A modern video conferencing app (Zoom clone) built with Next.js and GetStream.
+*   **🚦 FlowGuard AI**: Intelligent traffic management system for Bangalore using ML & customized signal control.
+*   **🩺 CodRev**: AI-powered code review platform leveraging Google Gemini's API.
+*   **🧠 DocuMind**: Document analysis tool that lets you "chat" with your PDFs.
 
-```bash
-pnpm dev
-```
+## 🛠️ Tech Stack
 
-Build for production with minification to the `dist` folder:
+This project is built using:
 
-```bash
-pnpm build
-```
+*   **Framework:** React (+ Vite)
+*   **State Management:** Zustand, Redux
+*   **Languages:** TypeScript, SCSS/CSS
+*   **Component Libraries:** UnoCSS, Radix UI (simulated)
+*   **Utilities:** date-fns, framer-motion
 
+## 💻 Features
 
-&nbsp;
+*   **Desktop Environment**: Draggable windows, context menus, and multitasking.
+*   **Terminal**: A working ZSH-like terminal with custom commands (try `cat bio.txt` or `ls`).
+*   **Safari**: A browser simulation to view my external profiles (GitHub, LeetCode, Codeforces).
+*   **Customization**: Dynamic wallpapers and themes (Light/Dark mode).
+*   **Responsive**: Works on various screen sizes (best viewed on Desktop).
 
-## Changelog
+## 🏃‍♂️ Running Locally
 
-- **Update 2023.06.26**: Improve [FaceTime](https://support.apple.com/en-us/HT208176).
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/Ujjwal120605/macos_portfolio.git
+    cd macos_portfolio
+    ```
 
-- **Update 2023.06.25**: Add [Typora](https://typora.io/), built on top of [Milkdown](https://milkdown.dev/).
+2.  **Install dependencies**
+    ```bash
+    npm install
+    # or
+    pnpm install
+    ```
 
-- **Update 2021.12.05**: Simulated the device's actual battery state using [Battery API](https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API), displaying 100% charge on [unsupported browsers](https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API#browser_compatibility).
+3.  **Start the development server**
+    ```bash
+    npm run dev
+    ```
 
-- **Update 2021.12.05**: Refactored for cleaner code by utilizing functional components and hooks. Refer to [this branch](https://github.com/Renovamen/playground-macos/tree/class-component) for the previous version implemented with class components.
+4.  Open [http://localhost:5173](http://localhost:5173) in your browser.
 
+## 📄 License
 
-&nbsp;
+This project is open source and available under the [MIT License](LICENSE).
 
-## Credits
-
-- macOS
-  - [Monterey](https://www.apple.com/macos/monterey/)
-  - [Catalina](https://www.apple.com/bw/macos/catalina/)
-- [macOS Icon Gallery](https://www.macosicongallery.com/)
-- [sindresorhus/file-icon-cli](https://github.com/sindresorhus/file-icon-cli)
-- [vivek9patel.github.io](https://github.com/vivek9patel/vivek9patel.github.io)
-
-
-&nbsp;
-
-## License
-
-[MIT](MIT)
+---
+*Based on the amazing work by [Renovamen](https://github.com/Renovamen/playground-macos).*
