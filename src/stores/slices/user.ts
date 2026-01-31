@@ -11,7 +11,36 @@ export interface UserSlice {
 }
 
 export const createUserSlice: StateCreator<UserSlice> = (set) => ({
-  typoraMd: `# Hi 👋\nThis is a simple clone of [Typora](https://typora.io/). Built on top of [Milkdown](https://milkdown.dev/), an open-source WYSIWYG markdown editor.`,
+  typoraMd: `# Hi there! 👋 I'm Ujjwal Bajpai
+
+I am an **Electronics & Communication Engineering student** at **RV College of Engineering, Bengaluru**, passionate about **Full-Stack Development** and **AI-driven solutions**.
+
+## 🚀 Professional Experience
+
+### 🏢 IT Intern @ IFFCO
+*   Developed a secure **HRMS portal** serving **500+ employees**.
+*   Analyzed and optimized **industrial automation systems**, improving operational efficiency.
+*   Gained hands-on experience with enterprise-level software development lifecycles.
+
+### 👥 Technical Member @ RVCE ACM
+*   Organized **technical workshops and bootcamps** for **200+ students**.
+*   Mentored peers on **Full-Stack Development** and **Data Structures & Algorithms**.
+*   Contributed to building a vibrant coding culture on campus.
+
+## 🛠️ Skills & Expertise
+*   **Languages**: C++, Python, JavaScript, SQL.
+*   **Web Technologies**: React.js, Node.js, Express.js, MongoDB, Tailwind CSS.
+*   **AI/ML**: Machine Learning, Gemini API, Predictive Modeling.
+*   **Tools**: Git, Docker, Postman.
+
+## 🏆 Achievements
+*   **Top 10% on LeetCode**: Solved **425+** problems.
+*   **2nd Runner-Up**: BITS Pilani API Hackathon 2025.
+*   **AIR 913**: COMEDK UGET 2023.
+
+Feel free to explore my work or reach out!
+*   [GitHub](https://github.com/Ujjwal120605)
+*   [LinkedIn](https://www.linkedin.com/in/ujjwal-bajpai-9aa242289/)`,
   setTyporaMd: (v) => set(() => ({ typoraMd: v })),
   faceTimeImages: {},
   addFaceTimeImage: (v) =>

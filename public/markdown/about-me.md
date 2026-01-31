@@ -1,32 +1,41 @@
-# About Me
+# Ujjwal Bajpai
+**Full-Stack Developer & Competitive Programmer**
+📍 Bangalore, India | 📧 [bajpaiujjwal3@gmail.com](mailto:bajpaiujjwal3@gmail.com)
+🔗 [LinkedIn](https://www.linkedin.com/in/ujjwal-bajpai-9aa242289/) | 🔗 [GitHub](https://github.com/Ujjwal120605)
 
-## Biography
+---
 
-Hey there! I am a PhD student at the [Computer Science and Engineering](https://www.eecs.psu.edu/) department of [Pennsylvania State University](https://www.psu.edu/). Previously, I received my master's degree in [Computer Science](https://www.bu.edu/cs/) from [Boston University](https://www.bu.edu/) and my bachelor’s degree in [Software Engineering](http://sse.tongji.edu.cn/) from [Tongji University](https://www.tongji.edu.cn/).
+## 🚀 Professional Summary
+Electronics & Communication Engineering student with a strong foundation in **Full-Stack Development** and **AI-driven solutions**. Experienced in building enterprise-level web applications and optimizing industrial systems. Passionate problem solver ranked in the **Top 10% on LeetCode**.
 
-I'm trying to find a balance between research and engineering.
+## 💼 Experience
 
-My current research interests primarily focus on understanding and enhancing the continuity, generalizability, efficiency, and other key properties of machine learning. I am also interested in large multimodal models.
+**IT Intern | IFFCO (Indian Farmers Fertiliser Cooperative Limited)**
+*   Designed and deployed a secure **HRMS portal** serving **500+ employees**, significantly streamlining internal record-keeping.
+*   Analyzed **industrial automation systems (PLCs & SCADA)** to optimize operational efficiency and reduce downtime.
+*   Collaborated with cross-functional teams to integrate modern software solutions with legacy plant infrastructure.
 
-I'm also learning web development and building machine learning software and systems.
+**Technical Member | RVCE ACM Student Chapter**
+*   Organized impactful **technical workshops and bootcamps** for **200+ students**.
+*   Mentored peers in **Full-Stack Development (MERN)** and **Data Structures & Algorithms**, fostering a strong technical community.
 
+## 🛠 Technical Skills
 
-## Contact
+*   **Languages:** C++, Python, JavaScript, TypeScript, SQL.
+*   **Frontend:** React.js, Next.js, Tailwind CSS, HTML5, CSS3.
+*   **Backend:** Node.js, Express.js, MongoDB, RESTful APIs.
+*   **Tools & Platforms:** Git, Docker, Firebase, Postman.
+*   **Core:** Data Structures & Algorithms, Machine Learning, System Design.
 
-Contact me by:
+## 🎓 Education
 
-- Email: [renovamenzxh@gmail.com](mailto:renovamenzxh@gmail.com)
-- Github: [@Renovamen](https://github.com/Renovamen)
-- [Google Scholar](https://scholar.google.com/citations?user=RuW6xgMAAAAJ)
-- Linkedin: [xiaohan-zou](https://www.linkedin.com/in/xiaohan-zou)
-- 知乎: [@西伯利亚大恶龙](https://www.zhihu.com/people/chao-neng-gui-su)
-- Personal Website: [zxh.me](https://zxh.me)
+**B.E. in Electronics & Communication Engineering**
+*RV College of Engineering, Bengaluru* | **CGPA: 8.52 / 10.0**
 
+## 🏆 Achievements
 
-## Résumé
-
-- Normal version: [English](https://zxh.me/files/cv/en.pdf) / [中文](https://zxh.me/files/cv/cn.pdf)
-
-  中文版的更新很可能不及时
-
-- Interesting version: [portfolio.zxh.me](https://portfolio.zxh.me) / [resume.zxh.io](https://resume.zxh.io)
+*   **2nd Runner-Up**: BITS Pilani API Hackathon 2025.
+*   **Competitive Programming**: 
+    *   **LeetCode**: [Top 10% (425+ Problems Solved)](https://leetcode.com/u/ujjwalbajpai/)
+    *   **Codeforces**: [Active Profile](https://codeforces.com/profile/ujj120605)
+*   **Scholastic**: Secured **AIR 913** in COMEDK UGET 2023.

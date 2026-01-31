@@ -13,24 +13,80 @@ const terminal: TerminalData[] = [
         content: (
           <div className="py-1">
             <div>
-              Hi, this is Xiaohan Zou. I am a PhD student at the Computer Science and
-              Engineering department of Pennsylvania State University.
+              Hi, I am Ujjwal Bajpai. Electronics & Communication Engineering
+              student at RV College of Engineering, Bengaluru.
+            </div>
+            <div className="mt-1">
+              <pre className="text-blue-300">
+                {`const ujjwal = {
+    pronouns: "He" | "Him",
+    location: "📍 Bangalore, Karnataka",
+    education: "🎓 B.E. in ECE @ RVCE",
+    cgpa: "⭐ 8.52",
+    currentRole: "💼 IT Intern @ IFFCO",
+    code: ["Python", "C++", "JavaScript", "TypeScript", "SQL"],
+    askMeAbout: ["Web Dev", "Machine Learning", "DSA", "AI"],
+    technologies: {
+        frontEnd: {
+            js: ["React", "Next.js"],
+            css: ["Tailwind", "Bootstrap"]
+        },
+        backEnd: {
+            js: ["Node.js", "Express"],
+        },
+        databases: ["MySQL", "MongoDB"],
+        misc: ["Firebase", "Git", "Docker"]
+    },
+    achievement: "🥉 2nd Runner-Up @ BITS Pilani API Hackathon",
+    currentFocus: "Building AI-powered web applications",
+    funFact: "I debug in my dreams 💭"
+};`}
+              </pre>
             </div>
           </div>
         )
       },
       {
-        id: "about-interests",
-        title: "interests.txt",
+        id: "about-skills",
+        title: "skills.txt",
         type: "file",
-        content: "Machine Learning / Computer Vision / Multimodal Learning"
+        content: (
+          <div className="py-1">
+            <div>
+              <span className="text-yellow-400">Languages:</span> C++, C,
+              Python, JavaScript, SQL, HTML5, CSS3.
+            </div>
+            <div>
+              <span className="text-yellow-400">Frameworks/Tools:</span>{" "}
+              React.js, Node.js, Express.js, MongoDB, Tailwind CSS, RESTful APIs,
+              Git, Machine Learning.
+            </div>
+          </div>
+        )
       },
       {
-        id: "about-who-cares",
-        title: "who-cares.txt",
+        id: "about-projects",
+        title: "projects.txt",
         type: "file",
-        content:
-          "I'm looking for a research internship for Summer 2024. I'm open to collaboration on research projects."
+        content: (
+          <ul className="list-disc ml-6">
+            <li>
+              <span className="text-blue-300">Yoom</span>: Modern Video Conferencing App (Zoom clone).
+            </li>
+            <li>
+              <span className="text-blue-300">CodRev</span>: AI-Powered Code
+              Review Platform using Gemini API.
+            </li>
+            <li>
+              <span className="text-blue-300">FlowGuard AI</span>: Smart
+              Traffic Management System using ML & Leaflet.js.
+            </li>
+            <li>
+              <span className="text-blue-300">DocuMind</span>:
+              Document-centric web app for structured data.
+            </li>
+          </ul>
+        )
       },
       {
         id: "about-contact",
@@ -42,65 +98,33 @@ const terminal: TerminalData[] = [
               Email:{" "}
               <a
                 className="text-blue-300"
-                href="mailto:renovamenzxh@gmail.com"
+                href="mailto:bajpaiujjwal3@gmail.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                renovamenzxh@gmail.com
+                bajpaiujjwal3@gmail.com
               </a>
             </li>
             <li>
               Github:{" "}
               <a
                 className="text-blue-300"
-                href="https://github.com/Renovamen"
+                href="https://github.com/Ujjwal120605"
                 target="_blank"
                 rel="noreferrer"
               >
-                @Renovamen
-              </a>
-            </li>
-            <li>
-              <a
-                className="text-blue-300"
-                href="https://scholar.google.com/citations?user=RuW6xgMAAAAJ"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Google Scholar
+                @Ujjwal120605
               </a>
             </li>
             <li>
               Linkedin:{" "}
               <a
                 className="text-blue-300"
-                href="https://www.linkedin.com/in/xiaohan-zou"
+                href="https://www.linkedin.com/in/ujjwal-bajpai-9aa242289/"
                 target="_blank"
                 rel="noreferrer"
               >
-                xiaohan-zou
-              </a>
-            </li>
-            <li>
-              Personal Website:{" "}
-              <a
-                className="text-blue-300"
-                href="https://zxh.me"
-                target="_blank"
-                rel="noreferrer"
-              >
-                https://zxh.me
-              </a>
-            </li>
-            <li>
-              知乎:{" "}
-              <a
-                className="text-blue-300"
-                href="https://www.zhihu.com/people/chao-neng-gui-su"
-                target="_blank"
-                rel="noreferrer"
-              >
-                @西伯利亚大恶龙
+                ujjwal-bajpai
               </a>
             </li>
           </ul>
@@ -116,10 +140,10 @@ const terminal: TerminalData[] = [
       <div className="py-1">
         <div>
           <span className="text-yellow-400">while</span>(
-          <span className="text-blue-400">sleeping</span>) <span>{"{"}</span>
+          <span className="text-blue-400">coding</span>) <span>{"{"}</span>
         </div>
         <div>
-          <span className="text-blue-400 ml-9">money</span>
+          <span className="text-blue-400 ml-9">skills</span>
           <span className="text-yellow-400">++</span>;
         </div>
         <div>

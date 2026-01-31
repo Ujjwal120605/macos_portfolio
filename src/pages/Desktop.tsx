@@ -237,9 +237,11 @@ export default function Desktop(props: MacActions) {
 
   return (
     <div
-      className="size-full overflow-hidden bg-center bg-cover"
+      className="size-full overflow-hidden bg-center bg-no-repeat bg-gray-900"
       style={{
         backgroundImage: `url(${dark ? wallpapers.night : wallpapers.day})`,
+        backgroundSize: "contain",
+        backgroundPosition: "center",
         filter: `brightness( ${(brightness as number) * 0.7 + 50}% )`
       }}
     >

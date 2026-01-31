@@ -342,7 +342,7 @@ export default class Terminal extends React.Component<{}, TerminalState> {
       <div key={`terminal-input-row-${id}`} flex>
         <div className="w-max hstack space-x-1.5">
           <span text-yellow-200>
-            zou@macbook-pro <span text-green-300>{this.getCurDirName()}</span>
+            ujjwal@macbook-pro <span text-green-300>{this.getCurDirName()}</span>
           </span>
           <span text-red-400>{">"}</span>
         </div>
@@ -377,8 +377,15 @@ export default class Terminal extends React.Component<{}, TerminalState> {
           <HowDare setRMRF={(value: boolean) => this.setState({ rmrf: value })} />
         )}
         <div p="y-2 x-1.5">
-          <span className="text-green-300">ヽ(ˋ▽ˊ)ノ</span>: Hey, you found the terminal!
-          Type `help` to get started.
+          <div className="text-gray-400">Last login: {new Date().toDateString()} on ttys001</div>
+          <br />
+          <div><span className="text-green-400">➜</span> <span className="text-cyan-300">~</span> <span className="text-gray-400">loading profile...</span></div>
+          <div><span className="text-green-400">✔</span> Loaded <span className="text-yellow-300">Ujjwal's Portfolio v2.0</span></div>
+          <div><span className="text-green-400">✔</span> Initialized <span className="text-blue-300">Electronics & Communication modules</span></div>
+          <div><span className="text-green-400">✔</span> Connected to <span className="text-purple-300">GitHub (425+ LeetCode Solved)</span></div>
+          <br />
+          <div className="text-blue-400 font-bold">Welcome to Ujjwal Bajpai's Terminal! 🚀</div>
+          <div className="text-gray-400">Type <span className="text-gray-200 bg-gray-700 px-1 rounded">help</span> to view available commands.</div>
         </div>
         <div id="terminal-content" p="x-1.5 b-2">
           {this.state.content}
