@@ -393,7 +393,7 @@ export default class Terminal extends React.Component<object, TerminalState> {
   };
 
   resume = () => {
-    window.open("resume.pdf", "_blank");
+    window.open("/resume.pdf", "_blank");
     this.generateResultRow(
       this.curInputTimes,
       <span className="text-green-400">Opening resume.pdf in new tab...</span>
