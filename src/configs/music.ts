@@ -1,10 +1,10 @@
 import type { MusicData } from "~/types";
 
 const music: MusicData = {
-  title: "Sunflower",
-  artist: "Post Malone / Swae Lee",
-  cover: "//p1.music.126.net/z0IO1vEsowL9mD_5yzUjeA==/109951163936068098.jpg",
-  audio: "music/sunflower.mp3"
+  title: "Learning To Fly",
+  artist: "Pink Floyd",
+  cover: "img/ui/learning_to_fly.png",
+  audio: "music/learning_to_fly.mp3"
 };
 
 export default music;

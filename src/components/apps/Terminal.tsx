@@ -1,5 +1,5 @@
 import React from "react";
-import { terminal } from "~/configs";
+import { terminal, bear } from "~/configs";
 import type { TerminalData } from "~/types";
 
 const CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789落霞与孤鹜齐飞秋水共长天一色";
@@ -84,7 +84,7 @@ const HowDare = ({ setRMRF }: { setRMRF: (value: boolean) => void }) => {
   );
 };
 
-export default class Terminal extends React.Component<{}, TerminalState> {
+export default class Terminal extends React.Component<object, TerminalState> {
   private history = [] as string[];
   private curHistory = 0;
   private curInputTimes = 0;
@@ -94,7 +94,7 @@ export default class Terminal extends React.Component<{}, TerminalState> {
     [key: string]: { (): void } | { (arg?: string): void };
   };
 
-  constructor(props: {}) {
+  constructor(props: object) {
     super(props);
     this.state = {
       content: [],
@@ -105,7 +105,19 @@ export default class Terminal extends React.Component<{}, TerminalState> {
       ls: this.ls,
       cat: this.cat,
       clear: this.clear,
-      help: this.help
+      help: this.help,
+      fetch: this.fetch,
+      contact: this.contact,
+      spotify: this.spotify,
+      resume: this.resume,
+      projects: this.projects,
+      internship: this.internship,
+      leetcode: this.leetcode,
+      codeforces: this.codeforces,
+      github: this.github,
+      skills: this.skills,
+      about: this.about,
+      linkedin: this.linkedin
     };
   }
 
@@ -239,6 +251,39 @@ export default class Terminal extends React.Component<{}, TerminalState> {
           <span text-red-400>rm -rf /</span> - :)
         </li>
         <li>
+          <span text-red-400>fetch</span> - Show system info
+        </li>
+        <li>
+          <span text-red-400>contact</span> - Contact info
+        </li>
+        <li>
+          <span text-red-400>spotify</span> - Now playing
+        </li>
+        <li>
+          <span text-red-400>resume</span> - View resume
+        </li>
+        <li>
+          <span text-red-400>projects</span> - View my projects
+        </li>
+        <li>
+          <span text-red-400>internship</span> - Experience info
+        </li>
+        <li>
+          <span text-red-400>leetcode</span> - Coding stats
+        </li>
+        <li>
+          <span text-red-400>github</span> - Github profile
+        </li>
+        <li>
+          <span text-red-400>skills</span> - Tech stack
+        </li>
+        <li>
+          <span text-red-400>about</span> - About me
+        </li>
+        <li>
+          <span text-red-400>linkedin</span> - LinkedIn profile
+        </li>
+        <li>
           press <span text-red-400>up arrow / down arrow</span> - Select history commands
         </li>
         <li>
@@ -247,6 +292,305 @@ export default class Terminal extends React.Component<{}, TerminalState> {
       </ul>
     );
     this.generateResultRow(this.curInputTimes, help);
+  };
+
+  fetch = () => {
+    const fetch = (
+      <div className="flex gap-4">
+        <div className="text-purple-400 font-bold hidden sm:block">
+          <pre>
+            {`
+       /\\
+      /  \\
+     /    \\
+    /      \\
+   /   /\\   \\
+  /   /  \\   \\
+ /   /    \\   \\
+/___/      \\___\\
+`}
+          </pre>
+        </div>
+        <div className="space-y-1">
+          <div className="text-xl font-bold text-white">Ujjwal Bajpai</div>
+          <div className="w-full h-px bg-gray-600 my-2"></div>
+          <div>
+            <span className="text-yellow-300 font-bold">OS:</span> macOS Portfolio v2.0
+          </div>
+          <div>
+            <span className="text-green-300 font-bold">Host:</span> Vercel
+          </div>
+          <div>
+            <span className="text-cyan-300 font-bold">Uptime:</span> Forever
+          </div>
+          <div>
+            <span className="text-blue-300 font-bold">Packages:</span> 142 (npm)
+          </div>
+          <div>
+            <span className="text-pink-300 font-bold">Shell:</span> zsh
+          </div>
+          <div>
+            <span className="text-red-300 font-bold">Theme:</span> Dark Mode
+          </div>
+          <div>
+            <span className="text-orange-300 font-bold">Role:</span> Full Stack Developer
+          </div>
+        </div>
+      </div>
+    );
+    this.generateResultRow(this.curInputTimes, fetch);
+  };
+
+  contact = () => {
+    const contact = (
+      <div className="space-y-2">
+        <div className="text-lg font-bold text-white mb-2">Connect with me:</div>
+        <div className="grid grid-cols-1 gap-1">
+          <div>
+            <span className="text-blue-400 font-bold w-24 inline-block">GitHub:</span>{" "}
+            <a
+              href="https://github.com/Ujjwal120605"
+              className="hover:underline text-gray-300"
+            >
+              github.com/Ujjwal120605
+            </a>
+          </div>
+          <div>
+            <span className="text-blue-500 font-bold w-24 inline-block">LinkedIn:</span>{" "}
+            <a
+              href="https://linkedin.com/in/ujjwalbajpai"
+              className="hover:underline text-gray-300"
+            >
+              linkedin.com/in/ujjwalbajpai
+            </a>
+          </div>
+          <div>
+            <span className="text-red-400 font-bold w-24 inline-block">Email:</span>{" "}
+            <a
+              href="mailto:bajpaiujjwal3@gmail.com"
+              className="hover:underline text-gray-300"
+            >
+              bajpaiujjwal3@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    );
+    this.generateResultRow(this.curInputTimes, contact);
+  };
+
+  spotify = () => {
+    const spotify = (
+      <div className="flex items-center gap-2">
+        <span className="i-mdi:spotify text-green-500 text-xl"></span>
+        <span className="text-white">
+          Now Playing: <span className="font-bold text-green-400">Learning To Fly</span> -
+          Unknown
+        </span>
+      </div>
+    );
+    this.generateResultRow(this.curInputTimes, spotify);
+  };
+
+  resume = () => {
+    window.open("resume.pdf", "_blank");
+    this.generateResultRow(
+      this.curInputTimes,
+      <span className="text-green-400">Opening resume.pdf in new tab...</span>
+    );
+  };
+
+  projects = () => {
+    const projectsList = bear[1].md.map((project) => (
+      <div key={project.id} className="mb-2">
+        <div className="text-blue-400 font-bold text-lg">
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noreferrer"
+            className="hover:underline"
+          >
+            {project.title}
+          </a>
+        </div>
+        <div className="text-gray-300">{project.excerpt}</div>
+      </div>
+    ));
+
+    const projects = (
+      <div>
+        <div className="text-yellow-400 font-bold text-xl mb-3">My Projects</div>
+        {projectsList}
+      </div>
+    );
+    this.generateResultRow(this.curInputTimes, projects);
+  };
+
+  internship = () => {
+    const internship = (
+      <div>
+        <div className="text-pink-400 font-bold text-xl mb-3">Experience</div>
+        <div className="mb-4">
+          <div className="text-lg font-bold text-green-300">IT Intern</div>
+          <div className="text-white mb-1">
+            <a
+              href="https://www.iffco.in"
+              target="_blank"
+              className="hover:underline"
+              rel="noreferrer"
+            >
+              Indian Farmers Fertiliser Cooperative Limited (IFFCO)
+            </a>
+          </div>
+          <div className="text-gray-400 italic">Upcoming / Recent</div>
+          <div className="text-gray-300 mt-2">
+            Currently working as an IT Intern, gaining hands-on experience in the
+            industry.
+          </div>
+        </div>
+      </div>
+    );
+    this.generateResultRow(this.curInputTimes, internship);
+  };
+
+  about = () => {
+    const about = (
+      <div className="space-y-3 text-gray-200">
+        <div>
+          I am a 3rd-year{" "}
+          <span className="text-yellow-300 font-bold">
+            Electronics and Communication Engineering
+          </span>{" "}
+          student and currently an IT Intern at{" "}
+          <span className="text-green-400 font-bold">IFFCO</span>, with a strong passion
+          for circuit design, signal processing, and communication systems.
+        </div>
+        <div>
+          Alongside my core engineering expertise, I am proficient in{" "}
+          <span className="text-blue-300 font-bold">Python</span> and{" "}
+          <span className="text-blue-300 font-bold">C++</span>, actively applying these
+          skills through problem solving on{" "}
+          <span className="text-yellow-500 font-bold">LeetCode</span> and contributing to
+          projects on <span className="text-purple-300 font-bold">GitHub</span>.
+        </div>
+        <div>
+          Driven by curiosity and a commitment to continuous learning, I enjoy developing
+          innovative solutions that bridge hardware and software domains. My experience
+          spans academic projects, hackathons, internships, and self-initiated work, where
+          I combine analytical thinking with adaptability to tackle complex challenges. I
+          aim to leverage my skills to contribute to impactful, cutting-edge technologies.
+        </div>
+      </div>
+    );
+    this.generateResultRow(this.curInputTimes, about);
+  };
+
+  linkedin = () => {
+    const linkedin = (
+      <div className="flex items-center gap-3">
+        <span className="i-simple-icons:linkedin text-blue-500 text-2xl" />
+        <div>
+          <div className="font-bold text-blue-500 text-lg">LinkedIn</div>
+          <div className="text-white">Connect with me professionally!</div>
+          <a
+            href="https://www.linkedin.com/in/ujjwal-bajpai-9aa242289/"
+            target="_blank"
+            className="text-blue-300 hover:underline"
+            rel="noreferrer"
+          >
+            linkedin.com/in/ujjwal-bajpai-9aa242289/
+          </a>
+        </div>
+      </div>
+    );
+    this.generateResultRow(this.curInputTimes, linkedin);
+  };
+
+  leetcode = () => {
+    const leetcode = (
+      <div className="flex items-center gap-3">
+        <span className="i-simple-icons:leetcode text-yellow-500 text-2xl" />
+        <div>
+          <div className="font-bold text-yellow-500 text-lg">LeetCode</div>
+          <div className="text-white">
+            Problems Solved: <span className="text-green-400 font-bold">425+</span>
+          </div>
+          <a
+            href="https://leetcode.com/u/Ujjwal120605/"
+            target="_blank"
+            className="text-blue-400 hover:underline"
+            rel="noreferrer"
+          >
+            View Profile
+          </a>
+        </div>
+      </div>
+    );
+    this.generateResultRow(this.curInputTimes, leetcode);
+  };
+
+  codeforces = () => {
+    const codeforces = (
+      <div className="flex items-center gap-3">
+        <span className="i-simple-icons:codeforces text-blue-500 text-2xl" />
+        <div>
+          <div className="font-bold text-blue-500 text-lg">Codeforces</div>
+          <div className="text-white">
+            Rating: <span className="text-green-400 font-bold">900</span>
+          </div>
+          <div className="text-gray-400 text-sm">Pupil (Max)</div>
+        </div>
+      </div>
+    );
+    this.generateResultRow(this.curInputTimes, codeforces);
+  };
+
+  github = () => {
+    const github = (
+      <div className="flex items-center gap-3">
+        <span className="i-simple-icons:github text-white text-2xl" />
+        <div>
+          <div className="font-bold text-white text-lg">GitHub</div>
+          <div className="text-gray-300">Check out my open source contributions!</div>
+          <a
+            href="https://github.com/Ujjwal120605"
+            target="_blank"
+            className="text-blue-400 hover:underline"
+            rel="noreferrer"
+          >
+            github.com/Ujjwal120605
+          </a>
+        </div>
+      </div>
+    );
+    this.generateResultRow(this.curInputTimes, github);
+  };
+
+  skills = () => {
+    const skills = (
+      <div>
+        <div className="text-cyan-400 font-bold text-xl mb-2">Technical Skills</div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <div>
+            <span className="text-green-300 font-bold">Languages:</span> C++, JavaScript,
+            TypeScript, Python, HTML/CSS, SQL
+          </div>
+          <div>
+            <span className="text-blue-300 font-bold">Frontend:</span> React.js, Next.js,
+            TailwindCSS
+          </div>
+          <div>
+            <span className="text-purple-300 font-bold">Backend:</span> Node.js, Express,
+            PostgreSQL, MongoDB
+          </div>
+          <div>
+            <span className="text-orange-300 font-bold">Tools:</span> Git, GitHub, VS
+            Code, Postman, Vercel
+          </div>
+        </div>
+      </div>
+    );
+    this.generateResultRow(this.curInputTimes, skills);
   };
 
   autoComplete = (text: string) => {
@@ -377,15 +721,35 @@ export default class Terminal extends React.Component<{}, TerminalState> {
           <HowDare setRMRF={(value: boolean) => this.setState({ rmrf: value })} />
         )}
         <div p="y-2 x-1.5">
-          <div className="text-gray-400">Last login: {new Date().toDateString()} on ttys001</div>
+          <div className="text-gray-400">
+            Last login: {new Date().toDateString()} on ttys001
+          </div>
           <br />
-          <div><span className="text-green-400">➜</span> <span className="text-cyan-300">~</span> <span className="text-gray-400">loading profile...</span></div>
-          <div><span className="text-green-400">✔</span> Loaded <span className="text-yellow-300">Ujjwal's Portfolio v2.0</span></div>
-          <div><span className="text-green-400">✔</span> Initialized <span className="text-blue-300">Electronics & Communication modules</span></div>
-          <div><span className="text-green-400">✔</span> Connected to <span className="text-purple-300">GitHub (425+ LeetCode Solved)</span></div>
+          <div>
+            <span className="text-green-400">➜</span>{" "}
+            <span className="text-cyan-300">~</span>{" "}
+            <span className="text-gray-400">loading profile...</span>
+          </div>
+          <div>
+            <span className="text-green-400">✔</span> Loaded{" "}
+            <span className="text-yellow-300">Ujjwal's Portfolio v2.0</span>
+          </div>
+          <div>
+            <span className="text-green-400">✔</span> Initialized{" "}
+            <span className="text-blue-300">Electronics & Communication modules</span>
+          </div>
+          <div>
+            <span className="text-green-400">✔</span> Connected to{" "}
+            <span className="text-purple-300">GitHub (425+ LeetCode Solved)</span>
+          </div>
           <br />
-          <div className="text-blue-400 font-bold">Welcome to Ujjwal Bajpai's Terminal! 🚀</div>
-          <div className="text-gray-400">Type <span className="text-gray-200 bg-gray-700 px-1 rounded">help</span> to view available commands.</div>
+          <div className="text-blue-400 font-bold">
+            Welcome to Ujjwal Bajpai's Terminal! 🚀
+          </div>
+          <div className="text-gray-400">
+            Type <span className="text-gray-200 bg-gray-700 px-1 rounded">help</span> to
+            view available commands.
+          </div>
         </div>
         <div id="terminal-content" p="x-1.5 b-2">
           {this.state.content}
