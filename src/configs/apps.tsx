@@ -7,8 +7,20 @@ import VSCode from "~/components/apps/VSCode";
 import FaceTime from "~/components/apps/FaceTime";
 import Typora from "~/components/apps/Typora";
 import Spotify from "~/components/apps/Spotify";
+import ChatGPT from "~/components/apps/ChatGPT";
 
 const apps: AppsData[] = [
+  {
+    id: "chatgpt",
+    title: "ChatGPT",
+    desktop: true,
+    width: 600,
+    height: 500,
+    minHeight: 400,
+    minWidth: 400,
+    img: "img/icons/chatgpt.png",
+    content: <ChatGPT />
+  },
   {
     id: "launchpad",
     title: "Launchpad",
