@@ -114,7 +114,10 @@ export default function DockItem({
             alt={title}
             title={title}
             draggable={false}
-            style={winWidth < 640 ? {} : { width, willChange: "width" }}
+            className="rounded-2xl overflow-hidden shadow-sm"
+            style={
+              winWidth < 640 ? {} : { width, aspectRatio: "1/1", willChange: "width" }
+            }
           />
         </a>
       ) : (
@@ -124,7 +127,8 @@ export default function DockItem({
           alt={title}
           title={title}
           draggable={false}
-          style={winWidth < 640 ? {} : { width, willChange: "width" }}
+          className="rounded-2xl overflow-hidden shadow-sm"
+          style={winWidth < 640 ? {} : { width, aspectRatio: "1/1", willChange: "width" }}
         />
       )}
       <div

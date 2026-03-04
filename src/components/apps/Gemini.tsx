@@ -23,7 +23,7 @@ Instructions for the Model:
 Use "I" when speaking as Ujjwal if the user asks "Who are you?" or "What are your skills?"
 `;
 
-export default function ChatGPT() {
+export default function Gemini() {
   const [messages, setMessages] = useState<any[]>([
     {
       role: "model",
@@ -98,9 +98,9 @@ export default function ChatGPT() {
   };
 
   return (
-    <div className="flex flex-col w-full h-full bg-[#343541] text-gray-100 font-sans text-sm overflow-hidden">
+    <div className="flex flex-col w-full h-full bg-[#1e1e1e] text-gray-100 font-sans text-sm overflow-hidden">
       {/* Header */}
-      <div className="h-10 flex items-center justify-center border-b border-white/10 bg-[#343541] shrink-0 text-gray-400 text-xs shadow-sm z-10">
+      <div className="h-10 flex items-center justify-center border-b border-white/10 bg-[#1e1e1e] shrink-0 text-gray-400 text-xs shadow-sm z-10">
         Model: Gemini 2.5 Flash
       </div>
 
@@ -117,8 +117,8 @@ export default function ChatGPT() {
             {msg.role === "model" && (
               <div className="size-8 rounded p-1 bg-white flex items-center justify-center shrink-0">
                 <img
-                  src="img/icons/chatgpt.png"
-                  alt="ChatGPT"
+                  src="img/icons/gemini.png"
+                  alt="Gemini"
                   className="size-full object-contain"
                 />
               </div>
@@ -127,7 +127,7 @@ export default function ChatGPT() {
               className={`max-w-[85%] px-4 py-3 rounded-2xl leading-relaxed text-sm ${
                 msg.role === "user"
                   ? "bg-blue-600 text-white rounded-br-sm"
-                  : "bg-[#444654] text-gray-100 rounded-bl-sm"
+                  : "bg-[#2d2d2d] text-gray-100 rounded-bl-sm"
               }`}
             >
               {msg.parts[0].text}
@@ -143,8 +143,8 @@ export default function ChatGPT() {
           <div className="flex gap-4 justify-start animate-pulse">
             <div className="size-8 rounded p-1 bg-white flex items-center justify-center shrink-0">
               <img
-                src="img/icons/chatgpt.png"
-                alt="ChatGPT"
+                src="img/icons/gemini.png"
+                alt="Gemini"
                 className="size-full object-contain"
               />
             </div>
@@ -154,8 +154,8 @@ export default function ChatGPT() {
       </div>
 
       {/* Input Area - Fixed height shrink-0 */}
-      <div className="p-4 bg-[#343541] border-t border-white/10 shrink-0">
-        <div className="relative flex items-center w-full bg-[#40414F] rounded-xl shadow-lg border border-white/10 focus-within:border-gray-500 transition-colors">
+      <div className="p-4 bg-[#1e1e1e] border-t border-white/10 shrink-0">
+        <div className="relative flex items-center w-full bg-[#2d2d2d] rounded-xl shadow-lg border border-white/10 focus-within:border-gray-500 transition-colors">
           <input
             type="text"
             className="flex-1 bg-transparent text-white p-3 pl-4 pr-10 outline-none w-full placeholder-gray-400"
